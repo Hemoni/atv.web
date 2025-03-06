@@ -2,25 +2,5 @@
 
 Rode a extensão SpringBoot e copie o arquivo. Após baixar o arquivo .java execute o código e abra a página web.
 
-package project.helloworld;
+![image](https://github.com/user-attachments/assets/fe8575bd-af59-40cd-9aa5-9861ab20d52d)
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-@SpringBootApplication
-@RestController
-public class HelloController {
-
-	public static void main(String[] args) {
-		SpringApplication.run(HelloController.class, args);
-	}
-
-	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "Moreira") String name) {
-		return String.format("Henrique %s!. Professor sabe muito", name);
-	}
-
-}
